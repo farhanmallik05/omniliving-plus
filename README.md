@@ -4,7 +4,7 @@
 
 ```bash
 # 1. Clone repository & install all workspace dependencies in one command
-git clone https://github.com/your-username/omniliving-plus.git
+git clone https://github.com/farhanmallik05/omniliving-plus.git
 cd omniliving-plus
 npm run install:all
 

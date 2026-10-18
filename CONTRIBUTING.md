@@ -14,7 +14,7 @@ We are committed to providing a welcoming, inclusive, and harassment-free enviro
 1. Fork the repository on GitHub.
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/your-username/omniliving-plus.git
+   git clone https://github.com/farhanmallik05/omniliving-plus.git
    cd omniliving-plus
    ```
 3. Install dependencies:
