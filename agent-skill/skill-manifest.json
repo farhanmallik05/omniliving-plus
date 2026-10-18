@@ -1,0 +1,35 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "OmniLiving+ Ambient Copilot",
+          "summary": "Autonomous Multimodal Living Room & Ambient Security Copilot for Alexa+",
+          "description": "Bridges Ring smart doorbells, Fire TV living room entertainment, Bee wearables, and AWS Bedrock multimodal vision using the Model Context Protocol (MCP 2025-11-25+ Streamable HTTP).",
+          "keywords": ["smart home", "alexa-plus", "mcp", "ring", "fire tv", "bedrock", "ambient ai"]
+        }
+      },
+      "category": "SMART_HOME",
+      "distributionCountries": ["US", "CA", "GB", "DE", "IN"]
+    },
+    "apis": {
+      "agentSkills": {
+        "transport": {
+          "type": "STREAMABLE_HTTP",
+          "uri": "http://localhost:3001/mcp",
+          "protocolVersion": "2025-11-25"
+        },
+        "supportedInterfaces": [
+          "Alexa.Presentation.APL",
+          "Alexa.Intercom",
+          "Alexa.SmartHome.SecurityPanel",
+          "Alexa.VideoStreaming"
+        ]
+      }
+    },
+    "permissions": [
+      { "name": "alexa::devices:all:notifications:write" },
+      { "name": "alexa::devices:all:geolocation:read" }
+    ]
+  }
+}

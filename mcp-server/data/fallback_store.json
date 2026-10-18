@@ -1,0 +1,1374 @@
+{
+  "events": [
+    {
+      "timestamp": "2026-10-18T12:15:03.794Z",
+      "source": "MCP Server",
+      "message": "[WARN] [Ring Webhook] Rejected: Missing signature header but RING_WEBHOOK_SECRET is active",
+      "level": "WARN",
+      "trace_id": "82b05f61468b4b22bbb7dc1ef9735dec"
+    },
+    {
+      "timestamp": "2026-10-18T12:15:03.790Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "3b1cf2bb96c94cfeb9ce3b76be9a9af1"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.463Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Amazon delivery driver just dropped off your parcel at the front porch. I have displayed the live view on your Fire TV.\"",
+      "level": "INFO",
+      "trace_id": "040f24493b434ac39828a25e82044e95"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.463Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Ring Doorbell: Amazon Delivery Arrived with Package\"",
+      "level": "INFO",
+      "trace_id": "72843d5f8cd340949257ceb9a0f94cf1",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Ring Doorbell: Amazon Delivery Arrived with Package\",\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.462Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "b8eb527687d14de998ba5232757e6be9",
+      "data_json": "{\"packageDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.460Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "518131b09c104ca38bb1aa87da084f1b",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.460Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "21cecd3643ae4f5eb83bae83bbc35527",
+      "data_json": "{\"status\":\"motion_detected\",\"visitorDetected\":true,\"packageDetected\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.459Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: omniliving_orchestrate_scenario",
+      "level": "INFO",
+      "trace_id": "2d5b943b595648368b4e6b9dac8eaa20",
+      "data_json": "{\"scenario\":\"package_delivery\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.392Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: ringing",
+      "level": "INFO",
+      "trace_id": "cd84369c046e4a92877fdb94e42ac424",
+      "data_json": "{\"status\":\"ringing\",\"visitorDetected\":true,\"lastMotionTimestamp\":\"2026-10-18T11:57:14.391Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.391Z",
+      "source": "MCP Server",
+      "message": "Received live Ring webhook event",
+      "level": "INFO",
+      "trace_id": "c49b433579bd46138e948608edc4975c",
+      "data_json": "{\"event_type\":\"ding\",\"doorbot_description\":\"Front Door Pro\",\"created_at\":\"2026-10-18T11:57:14.380Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.375Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_delete_rule",
+      "level": "INFO",
+      "trace_id": "3c7961bfbcf84b17bbd881b97c714f21",
+      "data_json": "{\"id\":\"rule_73bb17b1\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.359Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_toggle_rule",
+      "level": "INFO",
+      "trace_id": "e5cefe6f79ef42bbb7d70156f5353b9f",
+      "data_json": "{\"id\":\"rule_73bb17b1\",\"enabled\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.346Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Testing automation\"",
+      "level": "INFO",
+      "trace_id": "7252262f536745568d9de60ba3471d7c"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.345Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Automation Rule Fired: Automated Test Rule\"",
+      "level": "INFO",
+      "trace_id": "66b61499f40344379139fb42b9006fc1",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Automation Rule Fired: Automated Test Rule\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.344Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_test_rule",
+      "level": "INFO",
+      "trace_id": "5d1003640f5f4fb6a6ed8f8f261105b0",
+      "data_json": "{\"id\":\"rule_73bb17b1\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.327Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_create_rule",
+      "level": "INFO",
+      "trace_id": "46fa4a4f8b654644bec410a2bd425512",
+      "data_json": "{\"name\":\"Automated Test Rule\",\"when\":{\"event\":\"motion_detected\",\"source\":\"ring\"},\"if\":{\"fireTvPlaying\":true},\"then\":{\"fireTvPip\":true,\"alexaAnnouncement\":\"Testing automation\"},\"enabled\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.312Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_list_rules",
+      "level": "INFO",
+      "trace_id": "8465aaf81dc54e1ab2c3a21549e9a1f2",
+      "data_json": "{}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.296Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Automated test announcement\"",
+      "level": "INFO",
+      "trace_id": "b7da821a969944169d6415bd1d5b30e2"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.295Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: alexa_dispatch_ambient_action",
+      "level": "INFO",
+      "trace_id": "430edaee7fe04d74820010343d447536",
+      "data_json": "{\"spokenAnnouncement\":\"Automated test announcement\",\"smartLockAction\":\"lock\",\"porchLightBrightness\":100}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.289Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bee_sync_vitals",
+      "level": "INFO",
+      "trace_id": "2363a9ebc5b5404393c1f5db535f4c74",
+      "data_json": "{\"triggerHaptic\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.275Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Test automated PiP overlay\"",
+      "level": "INFO",
+      "trace_id": "c69cc35974354b6d9572c766dd69c794",
+      "data_json": "{\"overlayMessage\":\"Test automated PiP overlay\",\"pictureInPictureActive\":true,\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.274Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: firetv_push_overlay",
+      "level": "INFO",
+      "trace_id": "0d3b53340c864a079b7d0ebc8326431d",
+      "data_json": "{\"message\":\"Test automated PiP overlay\",\"enablePictureInPicture\":true,\"pauseMedia\":true,\"durationSeconds\":2}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.261Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "2aca3fdce58f4306a11f8a1b66b8b60a",
+      "data_json": "{\"packageDetected\":true,\"visitorDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.260Z",
+      "source": "MCP Server",
+      "message": "[AWS Bedrock] Bedrock analysis complete: Amazon Prime Delivery Driver placed an authentic parcel on the front porch",
+      "level": "INFO",
+      "trace_id": "06e7910deff34bbaadb578097b36f42e",
+      "data_json": "{\"modelId\":\"anthropic.claude-3-5-sonnet-20241022-v2:0\",\"confidence\":0.98,\"latencyMs\":428}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.259Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bedrock_analyze_scene",
+      "level": "INFO",
+      "trace_id": "cf90decf063b4b6693066a71bf8e7534",
+      "data_json": "{\"scenarioContext\":\"Amazon Prime package delivery at porch\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.246Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "2846b6d35f874d6593bc6225f2237bae",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.245Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "995aee3c587f46aa8da44fe7535b3736",
+      "data_json": "{\"status\":\"motion_detected\",\"motionZone\":\"porch\",\"intercomActive\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.244Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: ring_inspect_doorstep",
+      "level": "INFO",
+      "trace_id": "cf9160b7b7184433bb9657aeb200f755",
+      "data_json": "{\"zone\":\"porch\",\"enableIntercom\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:14.134Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "843cbdc3fb3946539746589c0a14e9b1"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:08.057Z",
+      "source": "MCP Server",
+      "message": "[WARN] [Ring Webhook] Rejected: Missing signature header but RING_WEBHOOK_SECRET is active",
+      "level": "WARN",
+      "trace_id": "eba3930e31aa48cba361596787628758"
+    },
+    {
+      "timestamp": "2026-10-18T11:57:08.053Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "1e58ec7b0c0444c08d9196df2939321b"
+    },
+    {
+      "timestamp": "2026-10-18T11:53:34.037Z",
+      "source": "MCP Server",
+      "message": "[WARN] [Ring Webhook] Rejected: Missing signature header but RING_WEBHOOK_SECRET is active",
+      "level": "WARN",
+      "trace_id": "73bca57cca654430b58ec6ce96060f50"
+    },
+    {
+      "timestamp": "2026-10-18T11:53:34.032Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "0f4be9b8c29c4785819682d6d569b955"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.126Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Amazon delivery driver just dropped off your parcel at the front porch. I have displayed the live view on your Fire TV.\"",
+      "level": "INFO",
+      "trace_id": "134315bc41d24f34aef9c078bb95c52f"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.124Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Ring Doorbell: Amazon Delivery Arrived with Package\"",
+      "level": "INFO",
+      "trace_id": "12e9714349d9433698b8e26a5742e279",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Ring Doorbell: Amazon Delivery Arrived with Package\",\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.123Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "ef9c84e20ecb41ffb1853675ef1907e7",
+      "data_json": "{\"packageDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.121Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "c8319980ccd2497cabefa4344b42abf7",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.120Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "90eed3029a3049b2bb2080c92df6e571",
+      "data_json": "{\"status\":\"motion_detected\",\"visitorDetected\":true,\"packageDetected\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.118Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: omniliving_orchestrate_scenario",
+      "level": "INFO",
+      "trace_id": "918f5b9c47ad4b8f936174b4010a6c10",
+      "data_json": "{\"scenario\":\"package_delivery\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.051Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: ringing",
+      "level": "INFO",
+      "trace_id": "a62303722f9c4d7ca90530a316a9480a",
+      "data_json": "{\"status\":\"ringing\",\"visitorDetected\":true,\"lastMotionTimestamp\":\"2026-10-18T11:52:43.050Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.050Z",
+      "source": "MCP Server",
+      "message": "Received live Ring webhook event",
+      "level": "INFO",
+      "trace_id": "16882536a2aa42d9b4b801c6c0370e97",
+      "data_json": "{\"event_type\":\"ding\",\"doorbot_description\":\"Front Door Pro\",\"created_at\":\"2026-10-18T11:52:43.041Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.035Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_delete_rule",
+      "level": "INFO",
+      "trace_id": "eff70fd2f5124f778a4aaa0bffa93cd1",
+      "data_json": "{\"id\":\"rule_94867198\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.019Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_toggle_rule",
+      "level": "INFO",
+      "trace_id": "78c16809b1834b62a91885c722fab298",
+      "data_json": "{\"id\":\"rule_94867198\",\"enabled\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.011Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Testing automation\"",
+      "level": "INFO",
+      "trace_id": "39653ffa7ab44e37968439791884e133"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.011Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Automation Rule Fired: Automated Test Rule\"",
+      "level": "INFO",
+      "trace_id": "15187f950fd549b4976597944b3b9b6a",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Automation Rule Fired: Automated Test Rule\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:43.009Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_test_rule",
+      "level": "INFO",
+      "trace_id": "d22f043f3c594438816256f7333d3768",
+      "data_json": "{\"id\":\"rule_94867198\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.997Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_create_rule",
+      "level": "INFO",
+      "trace_id": "026c831536f749bdab69e0e3102f8a01",
+      "data_json": "{\"name\":\"Automated Test Rule\",\"when\":{\"event\":\"motion_detected\",\"source\":\"ring\"},\"if\":{\"fireTvPlaying\":true},\"then\":{\"fireTvPip\":true,\"alexaAnnouncement\":\"Testing automation\"},\"enabled\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.995Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_list_rules",
+      "level": "INFO",
+      "trace_id": "788b4d6a48314dc894106248315cbe77",
+      "data_json": "{}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.981Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Automated test announcement\"",
+      "level": "INFO",
+      "trace_id": "fc9547dfd9c340e39e507578ceb389d7"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.980Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: alexa_dispatch_ambient_action",
+      "level": "INFO",
+      "trace_id": "271db800e0df4d5a95a4bca409435823",
+      "data_json": "{\"spokenAnnouncement\":\"Automated test announcement\",\"smartLockAction\":\"lock\",\"porchLightBrightness\":100}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.964Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bee_sync_vitals",
+      "level": "INFO",
+      "trace_id": "6c8eadcf79354df9861bc510f81d668c",
+      "data_json": "{\"triggerHaptic\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.949Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Test automated PiP overlay\"",
+      "level": "INFO",
+      "trace_id": "c7c94940097542dfb32748a6456f2941",
+      "data_json": "{\"overlayMessage\":\"Test automated PiP overlay\",\"pictureInPictureActive\":true,\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.948Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: firetv_push_overlay",
+      "level": "INFO",
+      "trace_id": "0307525a61904bf395b229622b17146b",
+      "data_json": "{\"message\":\"Test automated PiP overlay\",\"enablePictureInPicture\":true,\"pauseMedia\":true,\"durationSeconds\":2}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.935Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "b3aea64656094aa7ad536b456efe91e1",
+      "data_json": "{\"packageDetected\":true,\"visitorDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.934Z",
+      "source": "MCP Server",
+      "message": "[AWS Bedrock] Bedrock analysis complete: Amazon Prime Delivery Driver placed an authentic parcel on the front porch",
+      "level": "INFO",
+      "trace_id": "0f0988e4983f4e159e9e17ac383b8fdd",
+      "data_json": "{\"modelId\":\"anthropic.claude-3-5-sonnet-20241022-v2:0\",\"confidence\":0.98,\"latencyMs\":324}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.932Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bedrock_analyze_scene",
+      "level": "INFO",
+      "trace_id": "469e8ee030d541a9bda05e1bbaf5f2f9",
+      "data_json": "{\"scenarioContext\":\"Amazon Prime package delivery at porch\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.920Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "53445cf266b84c69b239b53ca5c21033",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.919Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "a37417af52bf47469ca133f840415cef",
+      "data_json": "{\"status\":\"motion_detected\",\"motionZone\":\"porch\",\"intercomActive\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.918Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: ring_inspect_doorstep",
+      "level": "INFO",
+      "trace_id": "3bf22c084693413193969a5f88d96ea9",
+      "data_json": "{\"zone\":\"porch\",\"enableIntercom\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:52:42.605Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "7ba1610a03264b67b62ffdda1e59f2c0"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.468Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Amazon delivery driver just dropped off your parcel at the front porch. I have displayed the live view on your Fire TV.\"",
+      "level": "INFO",
+      "trace_id": "c574ffd18e8f4e03b075abd4eacfda8d"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.467Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Ring Doorbell: Amazon Delivery Arrived with Package\"",
+      "level": "INFO",
+      "trace_id": "04d52dabfc214e2499248a80aef0f9bf",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Ring Doorbell: Amazon Delivery Arrived with Package\",\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.466Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "25a7bd7955ac49ad965b6f2805bb4c9f",
+      "data_json": "{\"packageDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.464Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "7311c3c100f54da88b93418af71ae2c4",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.463Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "5196023e52fb48aba3e17e352a81a776",
+      "data_json": "{\"status\":\"motion_detected\",\"visitorDetected\":true,\"packageDetected\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.462Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: omniliving_orchestrate_scenario",
+      "level": "INFO",
+      "trace_id": "92bb80ee9b1e446aba7307dce6d40831",
+      "data_json": "{\"scenario\":\"package_delivery\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.380Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: ringing",
+      "level": "INFO",
+      "trace_id": "136c65e636384829833fdf7a3f1b4a61",
+      "data_json": "{\"status\":\"ringing\",\"visitorDetected\":true,\"lastMotionTimestamp\":\"2026-10-18T11:40:35.380Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.379Z",
+      "source": "MCP Server",
+      "message": "Received live Ring webhook event",
+      "level": "INFO",
+      "trace_id": "0720fe4088804b559d5fe8d1565c83d0",
+      "data_json": "{\"event_type\":\"ding\",\"doorbot_description\":\"Front Door Pro\",\"created_at\":\"2026-10-18T11:40:35.372Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.371Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_delete_rule",
+      "level": "INFO",
+      "trace_id": "9c459b2d0f2a4234a4c1c9d26b759f7a",
+      "data_json": "{\"id\":\"rule_aa8374a6\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.368Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_toggle_rule",
+      "level": "INFO",
+      "trace_id": "122799b3992f4315a2fe04c86aa79f36",
+      "data_json": "{\"id\":\"rule_aa8374a6\",\"enabled\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.366Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Testing automation\"",
+      "level": "INFO",
+      "trace_id": "d270c39660b14d418a810a3e9683fedd"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.365Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Automation Rule Fired: Automated Test Rule\"",
+      "level": "INFO",
+      "trace_id": "3ec447e18d2e4fafb4a2db8f1d764b42",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Automation Rule Fired: Automated Test Rule\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.364Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_test_rule",
+      "level": "INFO",
+      "trace_id": "926e589a36f342bca7c4c66033bd8010",
+      "data_json": "{\"id\":\"rule_aa8374a6\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.346Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_create_rule",
+      "level": "INFO",
+      "trace_id": "98c048723da44bc5855cd650b4527a0e",
+      "data_json": "{\"name\":\"Automated Test Rule\",\"when\":{\"event\":\"motion_detected\",\"source\":\"ring\"},\"if\":{\"fireTvPlaying\":true},\"then\":{\"fireTvPip\":true,\"alexaAnnouncement\":\"Testing automation\"},\"enabled\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.330Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_list_rules",
+      "level": "INFO",
+      "trace_id": "a3e51491654d4d6ebdb793e9c0ceaef9",
+      "data_json": "{}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.316Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Automated test announcement\"",
+      "level": "INFO",
+      "trace_id": "6016a5b296f04ff093bc3196b6b29e7b"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.315Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: alexa_dispatch_ambient_action",
+      "level": "INFO",
+      "trace_id": "d6aa3c2063884afd89b8a952d9ece301",
+      "data_json": "{\"spokenAnnouncement\":\"Automated test announcement\",\"smartLockAction\":\"lock\",\"porchLightBrightness\":100}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.297Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bee_sync_vitals",
+      "level": "INFO",
+      "trace_id": "d98b23c24a0e4ca6afae203db0ae3b67",
+      "data_json": "{\"triggerHaptic\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.281Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Test automated PiP overlay\"",
+      "level": "INFO",
+      "trace_id": "282816f4f6034107a3837c17fdf3d126",
+      "data_json": "{\"overlayMessage\":\"Test automated PiP overlay\",\"pictureInPictureActive\":true,\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.279Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: firetv_push_overlay",
+      "level": "INFO",
+      "trace_id": "2212b505bfad49a1af9d185ee57e125b",
+      "data_json": "{\"message\":\"Test automated PiP overlay\",\"enablePictureInPicture\":true,\"pauseMedia\":true,\"durationSeconds\":2}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.264Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "46e6d6b5975e4361bc0e340e587c6dcb",
+      "data_json": "{\"packageDetected\":true,\"visitorDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.263Z",
+      "source": "MCP Server",
+      "message": "[AWS Bedrock] Bedrock analysis complete: Amazon Prime Delivery Driver placed an authentic parcel on the front porch",
+      "level": "INFO",
+      "trace_id": "5b47f6de0e774231b3b4c30c69a4d019",
+      "data_json": "{\"modelId\":\"anthropic.claude-3-5-sonnet-20241022-v2:0\",\"confidence\":0.98,\"latencyMs\":478}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.261Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bedrock_analyze_scene",
+      "level": "INFO",
+      "trace_id": "40efe45a73a1405db8cd74ffb5c6278b",
+      "data_json": "{\"scenarioContext\":\"Amazon Prime package delivery at porch\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.250Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "97c36b3f83604d20b95cd71f7ddc71d7",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.248Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "ded979e7d34a4a0f9c2b41c44a6ddc57",
+      "data_json": "{\"status\":\"motion_detected\",\"motionZone\":\"porch\",\"intercomActive\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.247Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: ring_inspect_doorstep",
+      "level": "INFO",
+      "trace_id": "a6b250950b844a28b4d646e56ba54262",
+      "data_json": "{\"zone\":\"porch\",\"enableIntercom\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:40:35.171Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "3f042fa512b94b4d9a3e670668fd3f5d"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.515Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Amazon delivery driver just dropped off your parcel at the front porch. I have displayed the live view on your Fire TV.\"",
+      "level": "INFO",
+      "trace_id": "d9bdb4e6a80c484ea67a2741fb15365d"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.514Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Ring Doorbell: Amazon Delivery Arrived with Package\"",
+      "level": "INFO",
+      "trace_id": "4b34923ff06c4805bf6f7e8a497812d7",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Ring Doorbell: Amazon Delivery Arrived with Package\",\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.513Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "99d0a7dec49542d5ad4e1ada5377dc5f",
+      "data_json": "{\"packageDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.512Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "407ccd10165346bb8df10a4e1f26028d",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.511Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "06a86be829864c9da3cacc799c614ef3",
+      "data_json": "{\"status\":\"motion_detected\",\"visitorDetected\":true,\"packageDetected\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.510Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: omniliving_orchestrate_scenario",
+      "level": "INFO",
+      "trace_id": "e6c43c16fd174de3aec272b872aceaa3",
+      "data_json": "{\"scenario\":\"package_delivery\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.430Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: ringing",
+      "level": "INFO",
+      "trace_id": "502cd36b561e48e598902ed681056b87",
+      "data_json": "{\"status\":\"ringing\",\"visitorDetected\":true,\"lastMotionTimestamp\":\"2026-10-18T11:33:18.429Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.428Z",
+      "source": "MCP Server",
+      "message": "Received live Ring webhook event",
+      "level": "INFO",
+      "trace_id": "9928df66331b4dc8af1ddd3429561333",
+      "data_json": "{\"event_type\":\"ding\",\"doorbot_description\":\"Front Door Pro\",\"created_at\":\"2026-10-18T11:33:18.408Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.411Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_delete_rule",
+      "level": "INFO",
+      "trace_id": "6d5caf655ab74334897991b053580814",
+      "data_json": "{\"id\":\"rule_23a4979e\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.394Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_toggle_rule",
+      "level": "INFO",
+      "trace_id": "9c3c8a5aea844695b8cf4dcae1931877",
+      "data_json": "{\"id\":\"rule_23a4979e\",\"enabled\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.384Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Testing automation\"",
+      "level": "INFO",
+      "trace_id": "a22dfe4e439d44c1babe60bccf5bb654"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.383Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Automation Rule Fired: Automated Test Rule\"",
+      "level": "INFO",
+      "trace_id": "c1d8b5d569fa492d886c4589c5812352",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Automation Rule Fired: Automated Test Rule\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.382Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_test_rule",
+      "level": "INFO",
+      "trace_id": "0d5b8d836226444caddba48560413b21",
+      "data_json": "{\"id\":\"rule_23a4979e\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.378Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_create_rule",
+      "level": "INFO",
+      "trace_id": "711e1832102e4a72ba463a5480eb063e",
+      "data_json": "{\"name\":\"Automated Test Rule\",\"when\":{\"event\":\"motion_detected\",\"source\":\"ring\"},\"if\":{\"fireTvPlaying\":true},\"then\":{\"fireTvPip\":true,\"alexaAnnouncement\":\"Testing automation\"},\"enabled\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.361Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_list_rules",
+      "level": "INFO",
+      "trace_id": "79adb878eaa84c0fa03f26ffd8731005",
+      "data_json": "{}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.346Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Automated test announcement\"",
+      "level": "INFO",
+      "trace_id": "11d7ab0bab894ae5a32b5d05de375b7e"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.345Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: alexa_dispatch_ambient_action",
+      "level": "INFO",
+      "trace_id": "d36e69484edd446290ecf0275745d766",
+      "data_json": "{\"spokenAnnouncement\":\"Automated test announcement\",\"smartLockAction\":\"lock\",\"porchLightBrightness\":100}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.327Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bee_sync_vitals",
+      "level": "INFO",
+      "trace_id": "a49cb718eac2447eb848616584909ea4",
+      "data_json": "{\"triggerHaptic\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.313Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Test automated PiP overlay\"",
+      "level": "INFO",
+      "trace_id": "2f80fe3a72f14ad18adeafbb31882837",
+      "data_json": "{\"overlayMessage\":\"Test automated PiP overlay\",\"pictureInPictureActive\":true,\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.312Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: firetv_push_overlay",
+      "level": "INFO",
+      "trace_id": "83842e308898453a9600e7e108aabb37",
+      "data_json": "{\"message\":\"Test automated PiP overlay\",\"enablePictureInPicture\":true,\"pauseMedia\":true,\"durationSeconds\":2}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.299Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "aaf0d0c2ae64484d9f4faf21053407f0",
+      "data_json": "{\"packageDetected\":true,\"visitorDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.298Z",
+      "source": "MCP Server",
+      "message": "[AWS Bedrock] Bedrock analysis complete: Amazon Prime Delivery Driver placed an authentic parcel on the front porch",
+      "level": "INFO",
+      "trace_id": "eed31255aa4044dea6964d644100b1dc",
+      "data_json": "{\"modelId\":\"anthropic.claude-3-5-sonnet-20241022-v2:0\",\"confidence\":0.98,\"latencyMs\":468}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.297Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bedrock_analyze_scene",
+      "level": "INFO",
+      "trace_id": "bc7c820a4b754e4693c7ac8edd37a6a4",
+      "data_json": "{\"scenarioContext\":\"Amazon Prime package delivery at porch\"}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.284Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "a7494d7af4894ca2bc98790795a2f08f",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.283Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "ee77c09025594099a41266125569aed1",
+      "data_json": "{\"status\":\"motion_detected\",\"motionZone\":\"porch\",\"intercomActive\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:18.282Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: ring_inspect_doorstep",
+      "level": "INFO",
+      "trace_id": "7c171b84ed86431486542f112f447bcc",
+      "data_json": "{\"zone\":\"porch\",\"enableIntercom\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T11:33:17.970Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "fc8ca5aaec424c0aa24a9b0093674784"
+    },
+    {
+      "timestamp": "2026-10-18T11:14:16.234Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "456f03a6c618483fb2259ba4fa634bf0"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.104Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Amazon delivery driver just dropped off your parcel at the front porch. I have displayed the live view on your Fire TV.\"",
+      "level": "INFO",
+      "trace_id": "296c6ea6ccfa45d2a807b809585dd25a"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.103Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Ring Doorbell: Amazon Delivery Arrived with Package\"",
+      "level": "INFO",
+      "trace_id": "06e73f03f81142ddb89f273da2735011",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Ring Doorbell: Amazon Delivery Arrived with Package\",\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.102Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "ebecd93537aa4ebdb8527d225484d57e",
+      "data_json": "{\"packageDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.101Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "444c82d85eca49c69ae60eccfdbeb7c1",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.100Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "c31703c8146f43538b4586de2a80d484",
+      "data_json": "{\"status\":\"motion_detected\",\"visitorDetected\":true,\"packageDetected\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.099Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: omniliving_orchestrate_scenario",
+      "level": "INFO",
+      "trace_id": "6b529afb0890454b865482f7443ddf9d",
+      "data_json": "{\"scenario\":\"package_delivery\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.017Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: ringing",
+      "level": "INFO",
+      "trace_id": "2fb17cc9a1764a628f24c2f46c979134",
+      "data_json": "{\"status\":\"ringing\",\"visitorDetected\":true,\"lastMotionTimestamp\":\"2026-10-18T10:12:38.016Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.015Z",
+      "source": "MCP Server",
+      "message": "Received live Ring webhook event",
+      "level": "INFO",
+      "trace_id": "0a5c0ec1de3043dabdc274d5404bd792",
+      "data_json": "{\"event_type\":\"ding\",\"doorbot_description\":\"Front Door Pro\",\"created_at\":\"2026-10-18T10:12:38.004Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:38.003Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_delete_rule",
+      "level": "INFO",
+      "trace_id": "57385614ca8444c4bcf4e1f71bedeab1",
+      "data_json": "{\"id\":\"rule_4ef1f7c1\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.999Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_toggle_rule",
+      "level": "INFO",
+      "trace_id": "4f604cd8e38b4fdda502766266133095",
+      "data_json": "{\"id\":\"rule_4ef1f7c1\",\"enabled\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.987Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Testing automation\"",
+      "level": "INFO",
+      "trace_id": "079310e01d9a4715b194d2b4b76a6631"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.986Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Automation Rule Fired: Automated Test Rule\"",
+      "level": "INFO",
+      "trace_id": "c0d7876e0a1247f1b5c76bf7ee5391cd",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Automation Rule Fired: Automated Test Rule\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.986Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_test_rule",
+      "level": "INFO",
+      "trace_id": "84dfbff5ee8a4b279ab4355d62b35b50",
+      "data_json": "{\"id\":\"rule_4ef1f7c1\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.982Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_create_rule",
+      "level": "INFO",
+      "trace_id": "ea4d713f85cb467b92b687d6eaf5b407",
+      "data_json": "{\"name\":\"Automated Test Rule\",\"when\":{\"event\":\"motion_detected\",\"source\":\"ring\"},\"if\":{\"fireTvPlaying\":true},\"then\":{\"fireTvPip\":true,\"alexaAnnouncement\":\"Testing automation\"},\"enabled\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.966Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_list_rules",
+      "level": "INFO",
+      "trace_id": "b8a410d484594c0dbb0eab84241b8534",
+      "data_json": "{}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.951Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Automated test announcement\"",
+      "level": "INFO",
+      "trace_id": "c5633b22eda34f9ea62d59a669990793"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.950Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: alexa_dispatch_ambient_action",
+      "level": "INFO",
+      "trace_id": "b3489512730543d3981293b2ef63dafd",
+      "data_json": "{\"spokenAnnouncement\":\"Automated test announcement\",\"smartLockAction\":\"lock\",\"porchLightBrightness\":100}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.935Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bee_sync_vitals",
+      "level": "INFO",
+      "trace_id": "3d66514148a5477c8cb24677513b8811",
+      "data_json": "{\"triggerHaptic\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.932Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Test automated PiP overlay\"",
+      "level": "INFO",
+      "trace_id": "1a810c8bb39a42d48cbcd37fdce3e5cd",
+      "data_json": "{\"overlayMessage\":\"Test automated PiP overlay\",\"pictureInPictureActive\":true,\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.931Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: firetv_push_overlay",
+      "level": "INFO",
+      "trace_id": "508528850f5a4f2095b3949365f71ee8",
+      "data_json": "{\"message\":\"Test automated PiP overlay\",\"enablePictureInPicture\":true,\"pauseMedia\":true,\"durationSeconds\":2}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.918Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "98e80a92ebc74ff6aaaa658d6074cbb1",
+      "data_json": "{\"packageDetected\":true,\"visitorDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.918Z",
+      "source": "MCP Server",
+      "message": "[AWS Bedrock] Bedrock analysis complete: Amazon Prime Delivery Driver placed an authentic parcel on the front porch",
+      "level": "INFO",
+      "trace_id": "0cbdca52de5542659a8960ae1c30bc42",
+      "data_json": "{\"modelId\":\"anthropic.claude-3-5-sonnet-20241022-v2:0\",\"confidence\":0.98,\"latencyMs\":351}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.916Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bedrock_analyze_scene",
+      "level": "INFO",
+      "trace_id": "c3ab3ae264624b83b4c4ffb171053462",
+      "data_json": "{\"scenarioContext\":\"Amazon Prime package delivery at porch\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.903Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "21e3fdd70ed04b138a061fb38cbedade",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.902Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "b92187516fd84be59250083e7f9dfd66",
+      "data_json": "{\"status\":\"motion_detected\",\"motionZone\":\"porch\",\"intercomActive\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.901Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: ring_inspect_doorstep",
+      "level": "INFO",
+      "trace_id": "ccd30b78ac2b4fd882befed51fe4c630",
+      "data_json": "{\"zone\":\"porch\",\"enableIntercom\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:12:37.772Z",
+      "source": "MCP Server",
+      "message": "Restored device state from persistent SQLite database.",
+      "level": "INFO",
+      "trace_id": "a1427d0d7ee946f4aff96cdb82c9ecc8"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.627Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Amazon delivery driver just dropped off your parcel at the front porch. I have displayed the live view on your Fire TV.\"",
+      "level": "INFO",
+      "trace_id": "d511a7a02e8e420381527ea66c8497c6"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.626Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Ring Doorbell: Amazon Delivery Arrived with Package\"",
+      "level": "INFO",
+      "trace_id": "9e5cdda564a349ce9ac460627f8eefe3",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Ring Doorbell: Amazon Delivery Arrived with Package\",\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.626Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "ede577f0024b48d184e4451f11fba225",
+      "data_json": "{\"packageDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.625Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "cd8cb27569f34401af85b4d1e7b3e394",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.624Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "dfbdc831a5ed41978c47c7ef5eb16a93",
+      "data_json": "{\"status\":\"motion_detected\",\"visitorDetected\":true,\"packageDetected\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.623Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: omniliving_orchestrate_scenario",
+      "level": "INFO",
+      "trace_id": "2a9575f06af84b419e51ebf1b0926ff9",
+      "data_json": "{\"scenario\":\"package_delivery\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.576Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: ringing",
+      "level": "INFO",
+      "trace_id": "b0440cf9237d4fdd8cb925cdb77bb572",
+      "data_json": "{\"status\":\"ringing\",\"visitorDetected\":true,\"lastMotionTimestamp\":\"2026-10-18T10:09:45.575Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.575Z",
+      "source": "MCP Server",
+      "message": "Received live Ring webhook event",
+      "level": "INFO",
+      "trace_id": "d0e2725839f040fc8f3f7d470a4fb7ed",
+      "data_json": "{\"event_type\":\"ding\",\"doorbot_description\":\"Front Door Pro\",\"created_at\":\"2026-10-18T10:09:45.576Z\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.572Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_delete_rule",
+      "level": "INFO",
+      "trace_id": "6b8b90c2ea1c4b659719d86e1fb86934",
+      "data_json": "{\"id\":\"rule_8da314c0\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.556Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_toggle_rule",
+      "level": "INFO",
+      "trace_id": "71bff75602df46c8abfc24c8edca8179",
+      "data_json": "{\"id\":\"rule_8da314c0\",\"enabled\":false}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.542Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Testing automation\"",
+      "level": "INFO",
+      "trace_id": "e7f0991fe28f4c82802b8528d58c5230"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.540Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Automation Rule Fired: Automated Test Rule\"",
+      "level": "INFO",
+      "trace_id": "330482c3babb499792b62f7d9532ee32",
+      "data_json": "{\"pictureInPictureActive\":true,\"overlayMessage\":\"Automation Rule Fired: Automated Test Rule\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.539Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_test_rule",
+      "level": "INFO",
+      "trace_id": "a9d40083c12348758905833cf1207395",
+      "data_json": "{\"id\":\"rule_8da314c0\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.523Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_create_rule",
+      "level": "INFO",
+      "trace_id": "48d8f37e0e304d4baf59951be9397d67",
+      "data_json": "{\"name\":\"Automated Test Rule\",\"when\":{\"event\":\"motion_detected\",\"source\":\"ring\"},\"if\":{\"fireTvPlaying\":true},\"then\":{\"fireTvPip\":true,\"alexaAnnouncement\":\"Testing automation\"},\"enabled\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.507Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: automation_list_rules",
+      "level": "INFO",
+      "trace_id": "ecc03ced8abf4cec9fc3ebfe36514a29",
+      "data_json": "{}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.491Z",
+      "source": "MCP Server",
+      "message": "[Alexa+] Alexa announced: \"Automated test announcement\"",
+      "level": "INFO",
+      "trace_id": "36999367d6464e299d886be710d24867"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.490Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: alexa_dispatch_ambient_action",
+      "level": "INFO",
+      "trace_id": "043d05b9ad37448e8110b35f74a312a6",
+      "data_json": "{\"spokenAnnouncement\":\"Automated test announcement\",\"smartLockAction\":\"lock\",\"porchLightBrightness\":100}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.473Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bee_sync_vitals",
+      "level": "INFO",
+      "trace_id": "5beabad9c13a4dc1bb8bf31aa346e4ba",
+      "data_json": "{\"triggerHaptic\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.457Z",
+      "source": "MCP Server",
+      "message": "[Fire TV] Fire TV updated: Overlay: \"Test automated PiP overlay\"",
+      "level": "INFO",
+      "trace_id": "cfbb05256f2845b49f90c0a8eb11f405",
+      "data_json": "{\"overlayMessage\":\"Test automated PiP overlay\",\"pictureInPictureActive\":true,\"status\":\"paused\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.456Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: firetv_push_overlay",
+      "level": "INFO",
+      "trace_id": "dc82170e9110488caf1725335534b2a8",
+      "data_json": "{\"message\":\"Test automated PiP overlay\",\"enablePictureInPicture\":true,\"pauseMedia\":true,\"durationSeconds\":2}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.450Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Smart Delivery PiP & Chime\" in response to ring.package_detected",
+      "level": "INFO",
+      "trace_id": "056aaf252369436493cd361ef9410f9e",
+      "data_json": "{\"fireTvPip\":true,\"pauseFireTv\":true,\"alexaAnnouncement\":\"Amazon courier delivered your package at the porch. Displaying camera view on Fire TV.\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.449Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: property change",
+      "level": "INFO",
+      "trace_id": "0a94df855ae44ae5873b2cd572bda87f",
+      "data_json": "{\"packageDetected\":true,\"visitorDetected\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.449Z",
+      "source": "MCP Server",
+      "message": "[AWS Bedrock] Bedrock analysis complete: Amazon Prime Delivery Driver placed an authentic parcel on the front porch",
+      "level": "INFO",
+      "trace_id": "7f2b4035d8b34b7aa1e499a4aca86004",
+      "data_json": "{\"modelId\":\"anthropic.claude-3-5-sonnet-20241022-v2:0\",\"confidence\":0.98,\"latencyMs\":492}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.447Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: bedrock_analyze_scene",
+      "level": "INFO",
+      "trace_id": "1dd81aae7eaa4df6b780a14a4b808bef",
+      "data_json": "{\"scenarioContext\":\"Amazon Prime package delivery at porch\"}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.444Z",
+      "source": "MCP Server",
+      "message": "[Automation Engine] Fired rule \"Elderly Care Immobility Haptic Escalation\" in response to ring.motion_detected",
+      "level": "INFO",
+      "trace_id": "34d7db785cd24f75b2d91c547f4fba01",
+      "data_json": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.443Z",
+      "source": "MCP Server",
+      "message": "[Ring] Ring state updated: motion_detected",
+      "level": "INFO",
+      "trace_id": "e775c6862f6f4acda0c042dc4b85b3e5",
+      "data_json": "{\"status\":\"motion_detected\",\"motionZone\":\"porch\",\"intercomActive\":true}"
+    },
+    {
+      "timestamp": "2026-10-18T10:09:45.442Z",
+      "source": "MCP Server",
+      "message": "[MCP Protocol] Executing tool: ring_inspect_doorstep",
+      "level": "INFO",
+      "trace_id": "7b70d24c9e354ed5b883d5db5871ac42",
+      "data_json": "{\"zone\":\"porch\",\"enableIntercom\":true}"
+    }
+  ],
+  "states": {
+    "current": "{\"ring\":{\"status\":\"motion_detected\",\"battery\":94,\"lastMotionTimestamp\":\"2026-10-18T11:57:14.391Z\",\"lastCameraSnapshotUrl\":\"/assets/sample-doorbell.jpg\",\"visitorDetected\":true,\"packageDetected\":true,\"intercomActive\":true,\"motionZone\":\"porch\"},\"fireTv\":{\"status\":\"paused\",\"currentApp\":\"Prime Video\",\"nowPlayingTitle\":\"The Lord of the Rings: The Rings of Power\",\"volume\":65,\"pictureInPictureActive\":true,\"overlayMessage\":\"Ring Doorbell: Amazon Delivery Arrived with Package\",\"streamUrl\":\"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4\"},\"beeWearable\":{\"connected\":true,\"heartRate\":72,\"activityLevel\":\"resting\",\"focusMode\":false,\"currentRoom\":\"Living Room\",\"battery\":88},\"alexa\":{\"state\":\"speaking\",\"lastSpokenPhrase\":\"Amazon delivery driver just dropped off your parcel at the front porch. I have displayed the live view on your Fire TV.\",\"chimeSoundActive\":false,\"smartLockState\":\"locked\",\"porchLightBrightness\":100}}"
+  },
+  "rules": [
+    {
+      "id": "rule_2b5ee030",
+      "name": "Smart Delivery PiP & Chime",
+      "enabled": 1,
+      "when_event": "{\"event\":\"package_detected\",\"source\":\"ring\"}",
+      "if_conditions": "{\"fireTvPlaying\":true}",
+      "then_actions": "{\"fireTvPip\":true,\"pauseFireTv\":true,\"alexaAnnouncement\":\"Amazon courier delivered your package at the porch. Displaying camera view on Fire TV.\"}",
+      "created_at": "2026-10-18T10:09:45.092Z",
+      "last_triggered_at": "2026-10-18T12:15:03.767Z",
+      "trigger_count": 6
+    },
+    {
+      "id": "rule_0f1b9942",
+      "name": "Elderly Care Immobility Haptic Escalation",
+      "enabled": 1,
+      "when_event": "{\"event\":\"motion_detected\",\"source\":\"ring\"}",
+      "if_conditions": "{\"roomEquals\":\"Living Room\"}",
+      "then_actions": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Safety check: Prolonged standstill detected near exterior stairs.\",\"fireTvPip\":true}",
+      "created_at": "2026-10-18T10:09:45.094Z",
+      "last_triggered_at": "2026-10-18T11:57:14.460Z",
+      "trigger_count": 12
+    },
+    {
+      "id": "rule_323ca628",
+      "name": "Night Perimeter Auto-Deadbolt & Floodlight",
+      "enabled": 1,
+      "when_event": "{\"event\":\"motion_detected\",\"source\":\"ring\"}",
+      "if_conditions": "{\"nightMode\":true}",
+      "then_actions": "{\"smartLockAction\":\"lock\",\"porchLightBrightness\":100,\"alexaAnnouncement\":\"Security hardening activated: Deadbolt locked and floodlight illuminated to 100%.\"}",
+      "created_at": "2026-10-18T10:09:45.094Z",
+      "trigger_count": 0
+    },
+    {
+      "id": "rule_ab5d1222",
+      "name": "Cardiac Vitals Spike Care Alert",
+      "enabled": 1,
+      "when_event": "{\"event\":\"heart_rate_spike\",\"source\":\"beeWearable\"}",
+      "if_conditions": "{\"heartRateThreshold\":95}",
+      "then_actions": "{\"pulseWearableHaptic\":true,\"alexaAnnouncement\":\"Health awareness: Bee wearable detected elevated heart rate. Checking in with care circle.\"}",
+      "created_at": "2026-10-18T10:09:45.094Z",
+      "last_triggered_at": "2026-10-18T12:15:03.768Z",
+      "trigger_count": 5
+    }
+  ]
+}

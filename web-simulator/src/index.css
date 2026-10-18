@@ -1,0 +1,574 @@
+/* ============================================================
+   OmniLiving+ Amazon Design System — Light Mode & Dual-Theme
+   Official Amazon Palette: Squid Ink, Smile Amber, Prime Teal, Gold 1-Click
+   ARCHETYPE: Amazon Developer Console + Ambient Smart Home
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* ==========================================================================
+   Design Tokens — Default Light Mode (Amazon Palette)
+   ========================================================================== */
+:root {
+  /* Amazon Canvas & Surface Hierarchy */
+  --canvas:             #eaeded;  /* Amazon classic soft gray store background */
+  --surface-0:          #ffffff;  /* Pure crisp white card surface */
+  --surface-1:          #f7f8f8;  /* Amazon sub-pod / secondary surface */
+  --surface-2:          #edeff1;  /* Amazon inset background */
+  --surface-3:          #e3e6e6;  /* Amazon separator / border */
+
+  /* Amazon Typography Hierarchy */
+  --text-primary:       #0f1111;  /* Amazon signature dark neutral off-black */
+  --text-secondary:     #565959;  /* Amazon secondary gray */
+  --text-muted:         #767676;  /* Amazon muted caption gray */
+  --text-inverse:       #ffffff;  /* Pure white text */
+  --text-link:          #007185;  /* Amazon link blue */
+  --text-link-hover:    #c7511f;  /* Amazon orange-brown link hover */
+
+  /* Amazon Brand Signature Colors */
+  --amazon-orange:      #ff9900;  /* Amazon Smile Orange */
+  --amazon-orange-hover:#fa8900;
+  --amazon-gold:        #ffd814;  /* Amazon Buy Now Gold CTA */
+  --amazon-gold-hover:  #f7ca00;
+  --amazon-amber:       #ffa41c;  /* Amazon Add to Cart Amber */
+  --amazon-amber-hover: #ff8f00;
+  --amazon-navy:        #131921;  /* Amazon Squid Ink Header Navy */
+  --amazon-navy-sub:    #232f3e;  /* Amazon Secondary Navy */
+  --amazon-blue:        #007185;  /* Amazon Prime Teal */
+  --amazon-blue-light:  #00a8e1;  /* Prime Video & Alexa Cyan */
+
+  /* Device Accent Colors */
+  --alexa-cyan:         #00a8e1;  /* Alexa Prime Cyan */
+  --alexa-cyan-dim:     rgba(0, 168, 225, 0.12);
+  --alexa-cyan-glow:    rgba(0, 168, 225, 0.35);
+  --ring-blue:          #1084e3;  /* Ring Doorbell Signature Blue */
+  --ring-blue-dim:      rgba(16, 132, 227, 0.12);
+  --firetv-orange:      #e64a19;  /* Fire TV Living Room Vibrant Accent */
+  --bee-coral:          #e11d48;  /* Bee Wearable Health Coral */
+
+  /* System Semantic Status */
+  --status-emerald:     #067d62;  /* Amazon Green / Success */
+  --status-emerald-dim: rgba(6, 125, 98, 0.12);
+  --status-amber:       #b12704;  /* Amazon Price / Alert Amber */
+  --status-amber-dim:   rgba(255, 153, 0, 0.14);
+  --status-rose:        #c40000;  /* Amazon Urgent Red */
+  --status-rose-dim:    rgba(196, 0, 0, 0.12);
+
+  /* Amazon Double-Bezel System */
+  --bezel-outer-bg:     #f2f4f6;
+  --bezel-outer-border: #d5d9d9;
+  --bezel-inner-bg:     #ffffff;
+  --bezel-inner-border: #e3e6e6;
+  --bezel-highlight:    inset 0 1px 0 rgba(255, 255, 255, 1);
+  --card-shadow:        0 2px 5px rgba(213, 217, 217, 0.5), 0 4px 16px rgba(15, 17, 17, 0.05);
+  --card-shadow-hover:  0 8px 24px rgba(15, 17, 17, 0.12);
+
+  /* Amazon Buttons */
+  --btn-island-bg:      #ffffff;
+  --btn-island-border:  #d5d9d9;
+  --btn-island-color:   #0f1111;
+  --btn-island-hover-bg:#f7fafa;
+  --btn-island-shadow:  0 2px 5px rgba(213, 217, 217, 0.5);
+
+  /* Code & Terminals */
+  --terminal-bg:        #f8fafc;
+  --terminal-border:    #e2e8f0;
+  --terminal-text:      #0f172a;
+
+  /* Form Elements */
+  --input-bg:           #ffffff;
+  --input-border:       #888c8c;
+  --input-color:        #0f1111;
+  --input-border-focus: #007185;
+  --input-shadow-focus: 0 0 0 3px rgba(0, 113, 133, 0.25);
+
+  /* Typography */
+  --font-display:       'Outfit', -apple-system, sans-serif;
+  --font-body:          'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-mono:          'JetBrains Mono', monospace;
+
+  /* Motion Physics */
+  --ease-spring:        cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-cinematic:     cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-snap:          cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth:        cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ==========================================================================
+   Dark Theme Variant (Toggleable)
+   ========================================================================== */
+[data-theme="dark"] {
+  --canvas:             #020408;
+  --surface-0:          #080c17;
+  --surface-1:          #0d1220;
+  --surface-2:          #111827;
+  --surface-3:          #1f293d;
+
+  --text-primary:       #f8fafc;
+  --text-secondary:     #94a3b8;
+  --text-muted:         #64748b;
+  --text-inverse:       #0f1111;
+  --text-link:          #38bdf8;
+  --text-link-hover:    #ff9900;
+
+  --bezel-outer-bg:     rgba(255, 255, 255, 0.025);
+  --bezel-outer-border: rgba(255, 255, 255, 0.065);
+  --bezel-inner-bg:     #080c17;
+  --bezel-inner-border: rgba(255, 255, 255, 0.04);
+  --bezel-highlight:    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  --card-shadow:        0 24px 48px -12px rgba(0, 0, 0, 0.8);
+  --card-shadow-hover:  0 36px 64px -12px rgba(0, 0, 0, 0.9);
+
+  --btn-island-bg:      linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.025) 100%);
+  --btn-island-border:  rgba(255, 255, 255, 0.09);
+  --btn-island-color:   #e2e8f0;
+  --btn-island-hover-bg:rgba(255, 255, 255, 0.12);
+  --btn-island-shadow:  0 2px 8px rgba(0, 0, 0, 0.3);
+
+  --terminal-bg:        #04070d;
+  --terminal-border:    rgba(255, 255, 255, 0.06);
+  --terminal-text:      #e2e8f0;
+
+  --input-bg:           #060a13;
+  --input-border:       rgba(255, 255, 255, 0.1);
+  --input-color:        #ffffff;
+  --input-border-focus: #00d4ff;
+  --input-shadow-focus: 0 0 0 3px rgba(0, 212, 255, 0.25);
+}
+
+/* ==========================================================================
+   Global Base & Typography
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(ellipse 90% 40% at 50% -10%, rgba(255, 153, 0, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 50% at 15% 10%, rgba(0, 168, 225, 0.04) 0%, transparent 60%);
+  background-attachment: fixed;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body {
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 15% 10%, rgba(0, 180, 255, 0.055) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 85% 90%, rgba(0, 87, 255, 0.045) 0%, transparent 60%);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+
+p, span, div {
+  text-wrap: pretty;
+}
+
+/* ==========================================================================
+   Amazon Double-Bezel Card Architecture
+   ========================================================================== */
+.double-bezel {
+  background: var(--bezel-outer-bg);
+  border: 1px solid var(--bezel-outer-border);
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: var(--card-shadow);
+  transition:
+    border-color 0.35s var(--ease-spring),
+    box-shadow 0.35s var(--ease-spring),
+    transform 0.35s var(--ease-spring);
+  will-change: transform;
+}
+
+.double-bezel:hover {
+  border-color: #b5b9b9;
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .double-bezel:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.double-bezel-inner {
+  background: var(--bezel-inner-bg);
+  border-radius: 16px;
+  border: 1px solid var(--bezel-inner-border);
+  box-shadow: var(--bezel-highlight);
+  padding: 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Glow variants */
+.double-bezel.glow-cyan:hover {
+  border-color: var(--alexa-cyan);
+  box-shadow: 0 10px 28px rgba(0, 168, 225, 0.2);
+}
+.double-bezel.glow-amber:hover {
+  border-color: var(--amazon-orange);
+  box-shadow: 0 10px 28px rgba(255, 153, 0, 0.22);
+}
+
+/* ==========================================================================
+   Amazon Navbar & Floating Island Header
+   ========================================================================== */
+.amazon-navbar {
+  background: var(--amazon-navy);
+  color: #ffffff;
+  border-bottom: 2px solid var(--amazon-orange);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 24px;
+}
+
+.amazon-navbar-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.floating-island {
+  background: var(--amazon-navy);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(19, 25, 33, 0.25);
+  margin: 14px auto 18px;
+  max-width: 1440px;
+  width: calc(100% - 48px);
+  padding: 12px 24px;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+  transition: border-color 0.3s var(--ease-spring), box-shadow 0.3s var(--ease-spring);
+}
+
+/* ==========================================================================
+   Amazon Buttons & CTAs
+   ========================================================================== */
+.btn-island {
+  background: var(--btn-island-bg);
+  border: 1px solid var(--btn-island-border);
+  color: var(--btn-island-color);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 7px 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s var(--ease-spring);
+  box-shadow: var(--btn-island-shadow);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.btn-island:hover {
+  background: var(--btn-island-hover-bg);
+  border-color: #888c8c;
+  transform: translateY(-1px);
+}
+
+.btn-island:active {
+  transform: scale(0.98);
+}
+
+/* Iconic Amazon 1-Click "Buy Now" Gold CTA */
+.btn-amazon-gold {
+  background: linear-gradient(to bottom, #ffd814 0%, #f7ca00 100%);
+  border: 1px solid #fcd200;
+  color: #0f1111;
+  font-weight: 700;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.btn-amazon-gold:hover {
+  background: linear-gradient(to bottom, #f7ca00 0%, #f0b800 100%);
+  border-color: #f2c200;
+  box-shadow: 0 4px 10px rgba(247, 202, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Iconic Amazon "Add to Cart" Amber CTA */
+.btn-amazon-amber {
+  background: linear-gradient(to bottom, #ffa41c 0%, #ff8f00 100%);
+  border: 1px solid #ff8f00;
+  color: #0f1111;
+  font-weight: 700;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.btn-amazon-amber:hover {
+  background: linear-gradient(to bottom, #fa8900 0%, #ee8000 100%);
+  border-color: #e57800;
+  box-shadow: 0 4px 10px rgba(255, 164, 28, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Primary Cyan/Blue Island CTA */
+.btn-island-primary {
+  background: linear-gradient(135deg, #007185 0%, #004d5a 100%);
+  color: #ffffff;
+  border: 1px solid #005a6a;
+  box-shadow: 0 2px 8px rgba(0, 113, 133, 0.35);
+}
+.btn-island-primary:hover {
+  background: linear-gradient(135deg, #008299 0%, #005a6a 100%);
+  box-shadow: 0 4px 14px rgba(0, 113, 133, 0.45);
+  transform: translateY(-1px);
+}
+
+.icon-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Amazon Eyebrow Tags & Badges
+   ========================================================================== */
+.eyebrow-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-family: var(--font-body);
+}
+
+.amazon-badge {
+  background: #232f3e;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.amazon-badge-orange {
+  background: #ff9900;
+  color: #0f1111;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   Animations & Micro-interactions
+   ========================================================================== */
+@keyframes alexaPulseKinetic {
+  0%   { transform: scale(0.96); box-shadow: 0 0 20px rgba(0, 168, 225, 0.3), 0 0 45px rgba(0, 113, 133, 0.15); }
+  50%  { transform: scale(1.04); box-shadow: 0 0 50px rgba(0, 168, 225, 0.65), 0 0 90px rgba(0, 113, 133, 0.3); }
+  100% { transform: scale(0.96); box-shadow: 0 0 20px rgba(0, 168, 225, 0.3), 0 0 45px rgba(0, 113, 133, 0.15); }
+}
+.alexa-halo-active { animation: alexaPulseKinetic 2.8s var(--ease-cinematic) infinite; }
+
+@keyframes listeningPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 153, 0, 0.5); }
+  50%       { box-shadow: 0 0 50px rgba(255, 153, 0, 0.85), 0 0 80px rgba(255, 153, 0, 0.35); }
+}
+.alexa-listening { animation: listeningPulse 1.5s ease-in-out infinite; }
+
+@keyframes heartPulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.25); }
+}
+.beat { animation: heartPulse 1.1s var(--ease-spring) infinite; }
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+.live-dot { animation: livePulse 1.4s ease-in-out infinite; }
+
+/* Speaking waveform bars */
+@keyframes barA { 0%, 100% { height: 6px; } 50% { height: 26px; } }
+@keyframes barB { 0%, 100% { height: 14px; } 50% { height: 8px; } }
+@keyframes barC { 0%, 100% { height: 22px; } 50% { height: 38px; } }
+@keyframes barD { 0%, 100% { height: 10px; } 50% { height: 18px; } }
+@keyframes barE { 0%, 100% { height: 18px; } 50% { height: 5px; } }
+.wave-bar { border-radius: 3px; display: inline-block; }
+.wave-bar:nth-child(1) { animation: barA 1.2s var(--ease-smooth) infinite; }
+.wave-bar:nth-child(2) { animation: barB 0.9s var(--ease-smooth) infinite 0.1s; }
+.wave-bar:nth-child(3) { animation: barC 1.4s var(--ease-smooth) infinite 0.05s; }
+.wave-bar:nth-child(4) { animation: barB 1.1s var(--ease-smooth) infinite 0.2s; }
+.wave-bar:nth-child(5) { animation: barD 1.3s var(--ease-smooth) infinite 0.15s; }
+.wave-bar:nth-child(6) { animation: barC 0.8s var(--ease-smooth) infinite 0.08s; }
+.wave-bar:nth-child(7) { animation: barA 1.5s var(--ease-smooth) infinite 0.25s; }
+.wave-bar:nth-child(8) { animation: barE 1.0s var(--ease-smooth) infinite 0.12s; }
+
+/* Scan line */
+@keyframes scanLine {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  10%  { opacity: 0.5; }
+  90%  { opacity: 0.5; }
+  100% { transform: translateY(400%); opacity: 0; }
+}
+.scan-line {
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0, 168, 225, 0.8), transparent);
+  animation: scanLine 4s linear infinite;
+  pointer-events: none;
+}
+
+/* Doorbell ringing burst */
+@keyframes ringingBurst {
+  0%   { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+.ringing-burst {
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 2px solid rgba(255, 153, 0, 0.7);
+  animation: ringingBurst 1.2s ease-out infinite;
+  pointer-events: none;
+}
+
+/* Responsive Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: calc(100% - 48px);
+}
+
+.main-col-left, .main-col-right {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1080px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    width: calc(100% - 32px);
+  }
+  .main-col-left, .main-col-right { grid-column: span 1; }
+  .floating-island {
+    width: calc(100% - 32px);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-grid {
+    width: calc(100% - 16px);
+    gap: 14px;
+  }
+  .floating-island {
+    width: calc(100% - 16px);
+    padding: 10px 14px;
+    top: 6px;
+  }
+  .double-bezel-inner {
+    padding: 14px !important;
+  }
+  .btn-island, .btn-primary {
+    min-height: 44px; /* Touch target guideline */
+  }
+  .scenario-scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-grid {
+    width: 100%;
+    padding: 0 8px;
+    gap: 10px;
+  }
+  .floating-island {
+    width: 100%;
+    border-radius: 0;
+    top: 0;
+  }
+  h2, h3 {
+    font-size: 15px !important;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface-2);
+}
+::-webkit-scrollbar-thumb {
+  background: #b5b9b9;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888c8c;
+}
+
+pre, code {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   WCAG AA / AAA Accessibility — Keyboard Focus Rings & Contrast
+   ========================================================================== */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2.5px solid var(--amazon-blue) !important;
+  outline-offset: 2.5px !important;
+  box-shadow: 0 0 0 4px rgba(0, 113, 133, 0.25) !important;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

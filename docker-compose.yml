@@ -1,0 +1,17 @@
+services:
+  omniliving:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: omniliving-plus
+    ports:
+      - "3001:3001"
+      - "5173:5173"
+    environment:
+      - MCP_PORT=3001
+      - PORT=3001
+      # Optional AWS Bedrock Configuration
+      # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      # - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      # - AWS_REGION=${AWS_REGION:-us-east-1}
+    restart: unless-stopped

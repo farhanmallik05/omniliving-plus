@@ -1,0 +1,35 @@
+{
+  "name": "omniliving-plus",
+  "version": "1.0.0",
+  "description": "OmniLiving+: Autonomous Multimodal Living Room & Ambient Security Copilot for Alexa+ powered by Model Context Protocol (Spec 2025-11-25+) and AWS Bedrock",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/start-all.js",
+    "server": "npm --prefix mcp-server start",
+    "web": "npm --prefix web-simulator dev",
+    "build": "npm --prefix mcp-server run build && npm --prefix web-simulator run build",
+    "test": "node scripts/verify-mcp.js",
+    "test:mcp": "node scripts/verify-mcp.js",
+    "test:unit": "npm --prefix mcp-server test",
+    "test:components": "npm --prefix web-simulator test",
+    "benchmark": "node scripts/run-benchmark.js",
+    "eval:bedrock": "node scripts/run-benchmark.js",
+    "doctor": "node scripts/doctor.js",
+    "install:all": "npm install && npm --prefix mcp-server install && npm --prefix web-simulator install"
+  },
+  "keywords": [
+    "alexa-plus",
+    "model-context-protocol",
+    "mcp",
+    "streamable-http",
+    "aws-bedrock",
+    "ring",
+    "fire-tv",
+    "bee",
+    "hackathon",
+    "ambient-intelligence"
+  ],
+  "author": "Hackathon Winner Team",
+  "license": "MIT"
+}
